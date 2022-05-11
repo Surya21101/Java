@@ -21,5 +21,11 @@ System.err.println("Size of Array List :" + al.size());
 al.remove(6);
 System.out.println(al);
 System.err.println("Size of Array List :" + al.size());
+
+al.add("Lavender");
+al.add("Lotus");
+System.out.println(al);
+System.err.println("Size of Array List :" + al.size());
+System.out.println("Element of index value is :" + al.get(6));
 }
 }
