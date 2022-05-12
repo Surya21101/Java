@@ -3,6 +3,7 @@ import java.util.List;
 class ArrayListEg {
 public static void main(String[] args) {
 List<String> al = new ArrayList<String>();
+System.out.println("Array list is :" + al.isEmpty());
 al.add("Rose");
 al.add("Sunflower");
 al.add("Rose");
