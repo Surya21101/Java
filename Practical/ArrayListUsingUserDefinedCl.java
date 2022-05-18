@@ -1,4 +1,4 @@
-class Bank {
+class Bank implements Comparable <Bank> {
 long accountNo;
 String customerName;
 double balance;
@@ -10,6 +10,14 @@ this.customerName = customerName;
 this.balance = balance;
 this.customerAge = customerAge;
 }
+@Override
+public int compareTo(Bank b) {
+if(customerAge==b.customerAge)
+return 0;
+else if(customerAge>b.customerAge)
+return 1;
+else 
+return -1;
 }
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -30,11 +38,14 @@ al.add(b5);
 al.add(b3);
 al.add(b2);
 al.add(b4);
-
+  
 Iterator itr = al.iterator();
 while (itr.hasNext()) {
 Bank obj = (Bank) itr.next();
 System.out.println(obj.accountNo+" "+obj.customerName+" "+obj.balance+" "+obj.customerAge);
 }
+Collections.sort(al);
+for(Bank ba : al) {
+System.out.println(obj.accountNo+" "+obj.customerName+" "+obj.balance+" "+obj.customerAge);
 }
 }
