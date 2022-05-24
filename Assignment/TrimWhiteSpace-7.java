@@ -1,4 +1,4 @@
-public class TrimWhiteSpace {
+public class TrimWhiteSpace-7 {
 public static void main(String[] args) {
 String str = " Java Exercises ";
 
