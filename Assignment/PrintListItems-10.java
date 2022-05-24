@@ -1,5 +1,5 @@
 import java.util.*;
-public class PrintListItems {
+public class PrintListItems-10 {
 static void checkExistance(String str1, String str_to_search) {
 int chk = 0;
 char chhr = ' ';
