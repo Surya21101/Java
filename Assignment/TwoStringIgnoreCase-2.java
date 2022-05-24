@@ -1,4 +1,4 @@
-public class TwoStringIgnoreCase {
+public class TwoStringIgnoreCase-2 {
 public static void main(String[] args) {
 String col1 = "Stephen Edwin King";
 String col2 = "Walter Winchell";
