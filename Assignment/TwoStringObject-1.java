@@ -1,4 +1,4 @@
-public class TwoStringObject {
+public class TwoStringObject-1 {
 public static void main(String[] args) {
 String col1 = "Stephen Edwin King";
 String col2 = "Walter Winchell";
