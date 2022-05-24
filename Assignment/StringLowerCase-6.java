@@ -1,4 +1,4 @@
-public class StringLowerCase {
+public class StringLowerCase-6 {
 public static void main(String[] args) {
 String str = "The Quick BroWn FoX!";
 
