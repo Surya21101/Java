@@ -1,5 +1,5 @@
 import java.util.*;
-public class FrequentCharacter {
+public class FrequentCharacter-8 {
 static final int NOOFCHARS = 256;
 static char get2ndMostFreq(String str1) {
 int[] ctr = new int[NOOFCHARS];
