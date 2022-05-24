@@ -1,4 +1,4 @@
-public class NonRepeatCharacter {
+public class NonRepeatCharacter-9 {
 public static void main(String[] args) {
 String str1 = "gibblegabbler";
 System.out.println("The given string is: " + str1);
