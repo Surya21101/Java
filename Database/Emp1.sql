@@ -47,6 +47,3 @@ select * from emp1,emp_trainee;
 alter table emp1 rename column Age to Age_in_Years;
 delete from emp1 where Designation = 'Trainee'; 
 alter table emp_trainee DROP COLUMN Age;
-
-
-
