@@ -26,3 +26,4 @@ select * from Employee where Department_Id = 60;
 select * from Employee where Last_Name = 'King';
 select distinct Job_Id from Employee;
 alter table Employee rename column Job_Id to Job_Title;
+select Comm_Pct from Employee;
