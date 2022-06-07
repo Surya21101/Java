@@ -16,4 +16,11 @@ select customer_table.customerid,customername,orderdate from customer_table righ
 order_table on customer_table.customerid = order_table.customerid;
 #foreign key
 alter table order_table add foreign key(customerid) references customer_table(customerid); 
-
+#foreignkey while table creation
+create table orders(
+order_id int primary key,
+orderdate date,
+quantity int,
+price double(5,2),
+customerid int,foreign key(customerid) references customer_table(customerid)
+);
