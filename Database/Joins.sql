@@ -24,3 +24,8 @@ quantity int,
 price double(5,2),
 customerid int,foreign key(customerid) references customer_table(customerid)
 );
+#cross join
+select * from customer_table cross join order_table;
+#self join
+select S1.sname,S1.saddr from student_details S1 inner join student_details S2
+on S1.saddr = S2.saddr and S1.id<>S2.id order by S1.id;
