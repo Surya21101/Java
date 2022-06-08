@@ -46,3 +46,4 @@ where customerid > all (select customerid from order_table);
 select customername,customerphone from customer_table 
 where not exists 
 (select * from order_table where customer_table.customerid = ordertable.customerid);
+
