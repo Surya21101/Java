@@ -46,4 +46,6 @@ where customerid > all (select customerid from order_table);
 select customername,customerphone from customer_table 
 where not exists 
 (select * from order_table where customer_table.customerid = ordertable.customerid);
+#rollup
+select dept,count(emp_id),sum(salary) as 'total_deptsalary' from emp group by dept with rollup;
 
