@@ -29,3 +29,9 @@ select * from customer_table cross join order_table;
 #self join
 select S1.sname,S1.saddr from student_details S1 inner join student_details S2
 on S1.saddr = S2.saddr and S1.id<>S2.id order by S1.id;
+#subquery
+select * from emp where emp_id in (select emp_id from emp where working_hour>10);
+select * from emp where emp_id in (select emp_id from emp where salary > 1200);
+select * from emp where salary = (select max(salary) from emp);
+select * from emp where addr not in (select addr from emp where addr = 'mumbai');
+select * from emp where dept !=(select dept from emp where dept = 'operation');
