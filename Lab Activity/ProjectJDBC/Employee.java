@@ -29,6 +29,7 @@ sl.setString(4,City);
 sl.setInt(5,Salary);
 sl.executeUpdate();
 }
+//fetching employee details in database
 public void fetchEmployee() throws SQLException {
 Connection conn = Helper.con();
 Statement st = conn.createStatement();
@@ -37,21 +38,15 @@ while (rs.next()) {
 System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3)+" "+rs.getString(4)+" "+rs.getInt(5));
 } 
 }
+//updating employee details in database
 public void updateEmployee() throws SQLException {
 Connection conn = Helper.con();
 Statement st = conn.createStatement();
-System.out.println("Enter Employee Id :");
-Id = s.nextInt();
-System.out.println("Enter Employee Name :");
-Name = s.nextLine();
-System.out.println("Enter Employee Age :");
-Age = s.nextInt();
 System.out.println("Enter Employee City :");
 City = s.nextLine();
-System.out.println("Enter Employee Salary :");
-Salary = s.nextInt();
 st.executeUpdate("update employee set City = '"+ City +"'+ where Id = "+Id);
 }
+//deleting employee details in database
 public void deleteEmployee() throws SQLException {
 Connection conn = Helper.con();
 Statement st = conn.createStatement();
