@@ -1,0 +1,17 @@
+<html>
+
+    <body>
+        <p id="a"></p>
+        <script>
+            let flowers = ["rose", "lilly", "sunflower", "lavender", "Orchids"];
+            //document.write(flowers);
+            let t = "<ul>";
+            for (let i = 0; i < flowers.length; i++) {
+                t += "<li>" + flowers[i] + "</li>";
+            }
+            t += "</ul>";
+            document.getElementById("a").innerHTML = t;
+        </script>
+    </body>
+
+</html>
